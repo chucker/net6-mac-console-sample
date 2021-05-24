@@ -6,7 +6,11 @@
     <RuntimeIdentifier>osx-x64</RuntimeIdentifier>
     <RootNamespace>net6_console_mac_sample</RootNamespace>
 
-    <PublishTrimmed>false</PublishTrimmed>
+    <!--
+      WORKAROUND to get the bundle to contain a binary
+      see https://github.com/xamarin/xamarin-macios/issues/11094
+    -->
+    <SelfContained>true</SelfContained>
   </PropertyGroup>
 
 </Project>

@@ -17,7 +17,8 @@ namespace net6_console_mac_sample
             var str = new NSString("test");
             var num = new NSNumber(123.45);
 
-            Console.WriteLine($"s has float value {num.FloatValue}");
+            Console.WriteLine($"str has string value {(string)str}");
+            Console.WriteLine($"num has float value {num.FloatValue}");
         }
     }
 }
